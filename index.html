@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <style>
+        #recaptcha {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -35,7 +42,7 @@
     <script>
         var onloadCallback = function() {
             grecaptcha.render('recaptcha', {
-                'sitekey' : '6Lf1wf0qAAAAADy_yjI92CYIcpB3y8IJj2Dj0bJ3',
+                'sitekey' : '6Lfru7QpAAAAAGJXtWyWXINWqGUQUxqG3xnw57eH',
                 'callback' : verifyCallback,
             });
         }
